@@ -1,0 +1,203 @@
+/* Seletor universal */
+* {
+    color: #fff;
+}
+
+/* CSS aplicado sobre Tags */
+
+body{
+    margin: 0;
+}
+
+main{
+    background-color: #1c1c1c;
+}
+
+span{
+    color: #ff3131;
+}
+
+input, button{
+    color: #1c1c1c;
+}
+
+/* CSS aplicado sobre IDs */
+
+#mainLogin{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+}
+
+#mainLogin div{
+    width: 50%;
+}
+
+#logoLogin{
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#divFormLogin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#formLogin{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    width: 50%;
+    height: 50%;
+}
+
+#mainRecuperaSenha{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#formRecuperaSenha{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    width: 30%;
+    height: 50%;
+}
+
+#mainCadastro{
+    position: absolute;
+    top: 20%;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#formCadastro{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    width: 30%;
+    height: 50%;
+}
+
+#cabecalho02{
+    position: fixed;
+    right: 0;
+    left: 0;
+    height: 20%;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#cabecalho02 div{
+    width: 50%;
+}
+
+#logoFeed{
+    width: 35%;
+}
+
+#navegacao{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#mainFeed{
+    position: absolute;
+    top: 20%;
+    bottom: 0; /* se atentar a isso*/
+    right: 0;
+    left: 0;
+    padding: 2%;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+#mainCompra{
+    position: absolute;
+    top: 20%;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#mainCompra div{
+    width: 50%;
+}
+
+#formDadosEntrega{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    width: 50%;
+    height: 50%;
+}
+
+#divDadosEntrega{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* CSS aplicado sobre Classes */
+
+.cabecalho01{
+    position: fixed;
+    right: 0;
+    left: 0;
+    height: 20%;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+}
+
+.cabecalho01 img{
+    width: 35%;
+}
+
+.boxManga{
+    display: flex;
+    flex-flow: column;
+}
+
+.capaManga{
+    background-color: white;
+    width: 10%;
+    height: 40%;
+}
+
+.cabecalho03{
+    position: fixed;
+    right: 0;
+    left: 0;
+    height: 20%;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+}
+
+.cabecalho03 img{
+    width: 35%;
+}

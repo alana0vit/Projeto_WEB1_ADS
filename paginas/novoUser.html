@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../imagens/logo-removebg.png" type="image/x-icon">
+    <link rel="stylesheet" href="../estilos/main.css">
+    <title>Cadastre-se</title>
+</head>
+
+<body>
+
+    <header class="cabecalho01">
+        <a href="../index.html"><img src="../imagens/logo-removebg.png" alt="Voltar para o login" title="Voltar para o login"></a>
+    </header>
+
+    <main id="mainCadastro">
+        <form action="" id="formCadastro">
+            <h2>Formulário de Cadastro</h2>
+            
+            <label for="txtName">Nome <span>*</span> </label>
+            <input type="text" id="txtName" placeholder="ex: joao/maria" required>
+            
+            <label>Sexo</label>
+            <div>
+                <input type="radio" id="F" name="sex" value="fmnn" checked>
+                <label for="F">Feminino</label>
+                <input type="radio" id="M" name="sex" value="mcln">
+                <label for="M">Masculino</label>
+            </div>
+            
+            <label for="txtObs">Observações </label>
+            <textarea name="OBSERVACOES" id="txtObs" cols="50" rows="10"></textarea>
+            
+            <label id="txtEmail">E-mail <span>*</span></label>
+            <input type="email" id="txtEmail" pattern=".+@beststartupever\.com" placeholder="ex: manganiikou@gmail.com" required>
+            
+            <label for="txtSenha">Senha <span>*</span></label>
+            <input type="password" id="txtSenha" autocomplete="new-password" pattern="[0-9a-fA-F]{4,8}" required>
+            
+            <label for="txtSenhaConf">Confirme a sua senha <span>*</span></label>
+            <input type="password" id="txtSenhaConf" autocomplete="new-password" pattern="[0-9a-fA-F]{4,8}" required>
+
+           <p>Já possui uma conta? <a href="../index.html">Login</a></p>
+
+           <div>
+            <button onclick="alert('Cadastrado com sucesso!')">
+                Cadastrar
+            </button>
+            <input type="reset" value="Limpar">
+           </div>
+        </form>
+    </main>
+</body>
+
+</html>
