@@ -1,6 +1,7 @@
 /* Seletor universal */
 * {
     color: #fff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 /* CSS aplicado sobre Tags */
@@ -127,9 +128,38 @@ input, button{
     right: 0;
     left: 0;
     padding: 2%;
-    /* display: flex;
+    display: flex;
     justify-content: center;
-    align-items: center; */
+}
+
+#articleFeed{
+    padding: 1%;
+    position: absolute;
+    left: 0;
+    width: 75%;
+}
+
+#asideFeed{
+    position: fixed;
+    right: 0;
+    top: 20%;
+    bottom: 0;
+    /* height: 100%; */
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #292929;
+}
+
+#asideFeed div{
+    width: 70%;
+    border-radius: 5px;
+    background-color: #ffffff38;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
 }
 
 #mainCompra{
@@ -161,6 +191,94 @@ input, button{
     align-items: center;
 }
 
+#confirmaCompra{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#formasPagamento{
+    display: flex;
+    flex-flow: column;
+}
+
+#navSobre{
+    position: absolute;
+    height: 10%;
+    top: 20%;
+    width: 100%;
+    background-color: #1c1c1c;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+}
+
+#navSobre ul{
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+}
+
+#navSobre ul li{
+    list-style-type: none;
+}
+
+#navSobre ul li a{
+    text-decoration: none;
+}
+
+#mainSobre{
+    background-color: #292929;
+    padding: 1%;
+    margin-top: 13%;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+#autorFt{
+    width: 10%;
+    border-radius: 50% 25% 50% 25%;
+}
+
+#autorSite{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 5px 5px 5px 5px #1c1c1c;
+    padding: 1%;
+    width: 95%;
+}
+
+#autorSite div a{
+    text-decoration: none;
+}
+
+#sistemaDescricao{
+    box-shadow: 5px 5px 5px 5px #1c1c1c;
+    padding: 1%;
+    width: 95%;
+    text-align: justify;
+}
+
+#paleta{
+    width: 90%;
+}
+
+#dificudadeObstaculo{
+    box-shadow: 5px 5px 5px 5px #1c1c1c;
+    padding: 1%;
+    width: 95%;
+    text-align: justify;
+}
+
+#dificudadeObstaculo ul li{
+    margin: 1%;
+}
+
 /* CSS aplicado sobre Classes */
 
 .cabecalho01{
@@ -183,21 +301,42 @@ input, button{
 }
 
 .capaManga{
-    background-color: white;
-    width: 10%;
-    height: 40%;
+    background-color: #1c1c1c;
+    width: 30%;
+    height: 50%;
 }
 
 .cabecalho03{
     position: fixed;
-    right: 0;
-    left: 0;
+    width: 100%;
     height: 20%;
     background-color: #000;
     display: flex;
     align-items: center;
+    top: 0;
 }
 
 .cabecalho03 img{
     width: 35%;
+}
+
+.divProdutos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left{
+    text-align: left;
+}
+
+.center{
+    text-align: center;
+}
+
+.topoSobre{
+    text-align: right;
+    margin: 2%;
+    text-decoration: none;
+    color: #7fffd4;
 }

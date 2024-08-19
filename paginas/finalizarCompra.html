@@ -38,9 +38,6 @@
 
                 <label for="cep">CEP <span>*</span></label><br>
                 <input type="number" name="CEP" id="cep">
-
-                <p>Valor do Frete:</p>
-                <p>0</p>
             </form>
         </div>
 
@@ -56,15 +53,32 @@
             <div id="formasPagamento">
                 <h2>Formas de Pagamento</h2>
 
-                <input type="checkbox" name="" id="">
-                <img src="" alt="">
+                <div id="boleto">
+                    <input type="radio" name="formaPagamentoOpcao" id="">
+                    <img src="../icons/boleto.png" alt="">
+                </div>
 
-                <input type="checkbox" name="" id="">
-                <img src="" alt="">
-                
-                <input type="checkbox" name="" id="">
-                <img src="" alt="">
+                <div id="cartao">
+                    <input type="radio" name="formaPagamentoOpcao" id="">
+                    <img src="../icons/cartao-cvv.png" alt="">
+                </div>
+
+                <div id="pix">
+                    <input type="radio" name="formaPagamentoOpcao" id="">
+                    <img src="../icons/pix.png" alt="">
+                </div> 
             </div>
+
+            <div>
+                <p>Valor Total: </p>
+                <p>0</p>
+            </div>
+            
+             <div>
+                <button onclick="alert('Compra realizada com sucesso!')">
+                    Finalizar Compra
+                </button>
+             </div>
         </div>
     </main>
 </body>
