@@ -1,7 +1,15 @@
+/* Fonte Baixada para o Site */
+@font-face {
+    font-family: 'fonteDoSite';
+    src: url(../fontes/Exo_2/Exo2-VariableFont_wght.ttf);
+}
+
+/* Fonte Importada para o Site */
+
 /* Seletor universal */
 * {
     color: #fff;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: fonteDoSite;
 }
 
 /* CSS aplicado sobre Tags */
@@ -54,8 +62,24 @@ input, button{
     display: flex;
     flex-flow: column;
     justify-content: center;
+    width: 80%;
+    height: 60%;
+}
+
+#formLogin input{
+    background-color: #292929;
+    color: #fff;
+    margin: 3%;
+    height: 10%;
+}
+
+#botaoLogin{
+    background-color: #7fffd4;
+    color: #000;
+    padding: 1%;
+    border-radius: 7px;
+    cursor: pointer;
     width: 50%;
-    height: 50%;
 }
 
 #mainRecuperaSenha{
@@ -73,8 +97,24 @@ input, button{
     display: flex;
     flex-flow: column;
     justify-content: center;
-    width: 30%;
-    height: 50%;
+    width: 40%;
+    height: 80%;
+}
+
+#formRecuperaSenha input{
+    background-color: #292929;
+    color: #fff;
+    margin: 5%;
+    height: 10%;
+}
+
+#botaoRecuperaSenha{
+    background-color: #7fffd4;
+    color: #000;
+    padding: 1%;
+    border-radius: 7px;
+    cursor: pointer;
+    width: 50%;
 }
 
 #mainCadastro{
@@ -92,8 +132,7 @@ input, button{
     display: flex;
     flex-flow: column;
     justify-content: center;
-    width: 30%;
-    height: 50%;
+    width: 40%;
 }
 
 #cabecalho02{
@@ -127,7 +166,7 @@ input, button{
     bottom: 0; /* se atentar a isso*/
     right: 0;
     left: 0;
-    padding: 2%;
+    /* padding: 1%; */
     display: flex;
     justify-content: center;
 }
@@ -340,3 +379,45 @@ input, button{
     text-decoration: none;
     color: #7fffd4;
 }
+
+.butaoSobre{
+    background-color: #7fffd4;
+    color: #000;
+    padding: 3%;
+    border-radius: 7px;
+}
+
+.butaoFeed{
+    background-color: #7fffd4;
+    color: #000;
+    padding: 1%;
+    border-radius: 7px;
+    text-decoration: none;
+}
+
+.promocaotitulo{
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.promocao:hover{
+    box-shadow: 5px 5px 5px 10px #fff;
+    opacity: .5;
+}
+
+.verdeSpan{
+    color: rgb(117, 228, 117);
+}
+
+.paragrafoLogin{
+    text-align: center;
+}
+
+.paragrafoLogin a{
+    text-decoration: none;
+    color: #7fffd4;
+}
+
+/* .viseble{
+    display: none;
+} */

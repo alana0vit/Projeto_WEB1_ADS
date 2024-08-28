@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./imagens/logo-removebg.png" type="image/x-icon">
     <link rel="stylesheet" href="./estilos/main.css">
+    <script src="./scripts/validacaoLogin.js" defer></script>
     <title>Ni Ikou - Login</title>
 </head>
 
@@ -17,18 +18,18 @@
         </div>
 
         <div id="divFormLogin">
-            <form action="" id="formLogin">
+            <form action="./paginas/feed.html" id="formLogin">
                 <label for="user">Nome <span>*</span></label>
-                <input type="text" id="user" name="nomeUser" placeholder="ex: mangaNiIkou" required>
+                <input type="text" id="user" name="nomeUser" placeholder="ex: mangaNiIkou">
 
                 <label for="pswd">Senha <span>*</span></label>
-                <input type="password" id="pswd" name="senhaUser" idautocomplete="current-password" required>
+                <input type="password" id="pswd" name="senhaUser" idautocomplete="current-password">
 
-                <p>Não possui uma conta? <a href="./paginas/novoUser.html">Cadastre-se</a></p>
+                <p class="paragrafoLogin">Não possui uma conta? <a href="./paginas/novoUser.html">Cadastre-se</a></p>
 
-                <a href="./paginas/recuperarSenha.html">Esqueceu a senha?</a>
+                <p class="paragrafoLogin"><a href="./paginas/recuperarSenha.html">Esqueceu a senha?</a></p>
 
-                <a href="./paginas/feed.html"><input type="submit" value="Entrar"></a>
+                <button type="button" id="botaoLogin" onclick="validar()">Entrar</button> <!-- centralizar este krlh -->
             </form>
         </div>
     </main>

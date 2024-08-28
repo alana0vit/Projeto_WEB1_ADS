@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../imagens/logo-removebg.png" type="image/x-icon">
     <link rel="stylesheet" href="../estilos/main.css">
+    <script src="../scripts/validacaoCadastro.js" defer></script>
     <title>Cadastre-se</title>
 </head>
 
@@ -20,11 +21,11 @@
             <h2>Formulário de Cadastro</h2>
             
             <label for="txtName">Nome <span>*</span> </label>
-            <input type="text" id="txtName" placeholder="ex: joao/maria" required>
+            <input type="text" id="txtName" placeholder="ex: joao/maria">
             
             <label>Sexo</label>
             <div>
-                <input type="radio" id="F" name="sex" value="fmnn" checked>
+                <input type="radio" id="F" name="sex" value="fmnn">
                 <label for="F">Feminino</label>
                 <input type="radio" id="M" name="sex" value="mcln">
                 <label for="M">Masculino</label>
@@ -34,19 +35,19 @@
             <textarea name="OBSERVACOES" id="txtObs" cols="50" rows="10"></textarea>
             
             <label id="txtEmail">E-mail <span>*</span></label>
-            <input type="email" id="txtEmail" pattern=".+@beststartupever\.com" placeholder="ex: manganiikou@gmail.com" required>
+            <input type="email" id="txtEmail" pattern=".+@beststartupever\.com" placeholder="ex: manganiikou@gmail.com">
             
             <label for="txtSenha">Senha <span>*</span></label>
-            <input type="password" id="txtSenha" autocomplete="new-password" pattern="[0-9a-fA-F]{4,8}" required>
+            <input type="password" id="txtSenha" autocomplete="new-password" pattern="[0-9a-fA-F]{4,8}">
             
             <label for="txtSenhaConf">Confirme a sua senha <span>*</span></label>
-            <input type="password" id="txtSenhaConf" autocomplete="new-password" pattern="[0-9a-fA-F]{4,8}" required>
+            <input type="password" id="txtSenhaConf" autocomplete="new-password" pattern="[0-9a-fA-F]{4,8}">
 
            <p>Já possui uma conta? <a href="../index.html">Login</a></p>
 
            <div>
-            <button onclick="alert('Cadastrado com sucesso!')">
-                Cadastrar
+            <button type="submit" id="botaoCadastro" onclick="validar()"> <!-- centralizar este krlh -->
+                Enviar
             </button>
             <input type="reset" value="Limpar">
            </div>

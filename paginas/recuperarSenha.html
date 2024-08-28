@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../imagens/logo-removebg.png" type="image/x-icon">
     <link rel="stylesheet" href="../estilos/main.css">
+    <script src="../scripts/validacaoRecuperaSenha.js" defer></script>
     <title>Recupere sua Senha</title>
 </head>
 
@@ -22,7 +23,7 @@
             <label for="txtEmail">E-mail <span>*</span></label>
             <input type="email" name="email" id="txtEmail" pattern=".+@beststartupever\.com" placeholder="ex: manganiikou@gmail.com">
 
-            <button onclick="alert('Senha enviada para o e-mail informado')">
+            <button type="submit" id="botaoRecuperaSenha" onclick="validar()"> <!-- centralizar este krlh -->
                 Enviar
             </button>
         </form>
