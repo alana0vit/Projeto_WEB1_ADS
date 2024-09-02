@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../imagens/logo-removebg.png" type="image/x-icon">
     <link rel="stylesheet" href="../estilos/main.css">
+    <script src="../scripts/validacaoCompras.js" defer></script>
     <title>Finalize sua compra</title>
 </head>
 
@@ -17,7 +18,6 @@
     </header>
 
     <main id="mainCompra">
-        <div id="divDadosEntrega">
             <form action=""  id="formDadosEntrega">
                 <h2>Dados da entrega</h2>
 
@@ -34,52 +34,31 @@
                 <input type="text" name="state" id="estado">
 
                 <label for="num">Número <span>*</span></label><br>
-                <input type="number" name="numero" id="num"">
+                <input type="text" name="numero" id="num">
 
                 <label for="cep">CEP <span>*</span></label><br>
-                <input type="number" name="CEP" id="cep">
-            </form>
-        </div>
+                <input type="text" name="CEP" id="cep">
 
-        <div id="confirmaCompra">
-            <div id="resumoCompra">
-                <h2>Resumo do Carrinho</h2>
-                <p>Quantidade de Produtos:</p>
-                <p>0</p>
-                <p>Valor total dos Produtos</p>
-                <p>0</p>
-            </div>
-
-            <div id="formasPagamento">
-                <h2>Formas de Pagamento</h2>
-
+                <label id="formasPag">Formas de pagamentos <span>*</span></label>
                 <div id="boleto">
-                    <input type="radio" name="formaPagamentoOpcao" id="">
+                    <input type="radio" name="formaPagamentoOpcao" id="boleto2">
                     <img src="../icons/boleto.png" alt="">
                 </div>
 
                 <div id="cartao">
-                    <input type="radio" name="formaPagamentoOpcao" id="">
+                    <input type="radio" name="formaPagamentoOpcao" id="cartao2">
                     <img src="../icons/cartao-cvv.png" alt="">
                 </div>
 
                 <div id="pix">
-                    <input type="radio" name="formaPagamentoOpcao" id="">
+                    <input type="radio" name="formaPagamentoOpcao" id="pix2">
                     <img src="../icons/pix.png" alt="">
                 </div> 
-            </div>
 
-            <div>
-                <p>Valor Total: </p>
-                <p>0</p>
-            </div>
-            
-             <div>
-                <button onclick="alert('Compra realizada com sucesso!')">
+                <button type="submit" id="botaoCompra" onclick="validar()">
                     Finalizar Compra
                 </button>
-             </div>
-        </div>
+            </form>
     </main>
 </body>
 

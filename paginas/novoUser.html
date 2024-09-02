@@ -21,35 +21,35 @@
             <h2>Formulário de Cadastro</h2>
             
             <label for="txtName">Nome <span>*</span> </label>
-            <input type="text" id="txtName" placeholder="ex: joao/maria">
+            <input type="text" id="txtName" placeholder="ex: joao/maria" class="inputCadastro">
             
             <label>Sexo</label>
-            <div>
+            <div id="radioCadastro">
                 <input type="radio" id="F" name="sex" value="fmnn">
-                <label for="F">Feminino</label>
+                <label for="F" class="radioCadastro">Feminino</label>
                 <input type="radio" id="M" name="sex" value="mcln">
-                <label for="M">Masculino</label>
+                <label for="M" class="radioCadastro">Masculino</label>
             </div>
             
             <label for="txtObs">Observações </label>
-            <textarea name="OBSERVACOES" id="txtObs" cols="50" rows="10"></textarea>
+            <textarea name="OBSERVACOES" id="txtObs" cols="50" rows="10" class="obsCadastro"></textarea>
             
             <label id="txtEmail">E-mail <span>*</span></label>
-            <input type="email" id="txtEmail" pattern=".+@beststartupever\.com" placeholder="ex: manganiikou@gmail.com">
+            <input type="email" id="txtEmail" pattern=".+@beststartupever\.com" placeholder="ex: manganiikou@gmail.com" class="inputCadastro">
             
             <label for="txtSenha">Senha <span>*</span></label>
-            <input type="password" id="txtSenha" autocomplete="new-password" pattern="[0-9a-fA-F]{4,8}">
+            <input type="password" id="txtSenha" autocomplete="new-password" pattern="[0-9a-fA-F]{4,8}" class="inputCadastro">
             
             <label for="txtSenhaConf">Confirme a sua senha <span>*</span></label>
-            <input type="password" id="txtSenhaConf" autocomplete="new-password" pattern="[0-9a-fA-F]{4,8}">
+            <input type="password" id="txtSenhaConf" autocomplete="new-password" pattern="[0-9a-fA-F]{4,8}" class="inputCadastro">
 
-           <p>Já possui uma conta? <a href="../index.html">Login</a></p>
+           <p class="paragrafoLogin">Já possui uma conta? <a href="../index.html">Login</a></p>
 
            <div>
-            <button type="submit" id="botaoCadastro" onclick="validar()"> <!-- centralizar este krlh -->
+            <button type="submit" class="botaoCadastro" onclick="validar()"> <!-- centralizar este krlh -->
                 Enviar
             </button>
-            <input type="reset" value="Limpar">
+            <button type="reset" class="botaoCadastro">Limpar</button>
            </div>
         </form>
     </main>
