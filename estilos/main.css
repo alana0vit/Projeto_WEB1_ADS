@@ -162,10 +162,9 @@ input, button{
 #mainFeed{
     position: absolute;
     top: 20%;
-    bottom: 0; /* se atentar a isso*/
     right: 0;
     left: 0;
-    /* padding: 1%; */
+    padding: 1%;
     display: flex;
     justify-content: center;
 }
@@ -362,10 +361,11 @@ input, button{
     width: 35%;
 }
 
-.boxManga{
+/* .boxManga{
     display: flex;
     flex-flow: column;
-}
+    align-items: center;
+} */
 
 .capaManga{
     background-color: #1c1c1c;
@@ -478,6 +478,16 @@ input, button{
     margin-top: 9%;
     width: 100%;
     padding: 1%;
+}
+
+.centerProdutos{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.posicaoImgProduto{
+margin-left: 41%;
 }
 
 /* .viseble{
