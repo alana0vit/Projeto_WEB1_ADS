@@ -67,4 +67,8 @@ function validar(){
         }
 
     alert('Compra realizada com sucesso!')
+
+    var formulario = document.getElementById('formDadosEntrega');
+
+    formulario.submit();
 }

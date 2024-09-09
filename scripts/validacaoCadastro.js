@@ -43,4 +43,8 @@ function validar(){
     }
 
     alert('Cadastrado com sucesso!');
+
+    var formulario = document.getElementById('formCadastro');
+
+    formulario.submit();
 }
