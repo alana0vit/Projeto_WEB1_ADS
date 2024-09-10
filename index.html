@@ -21,15 +21,17 @@
             <form action="./paginas/feed.html" id="formLogin">
                 <label for="user">Nome <span>*</span></label>
                 <input type="text" id="user" name="nomeUser" placeholder="ex: mangaNiIkou">
+                <p id="username-helper" class="helper-text">Mensagem de ajuda</p>
 
                 <label for="pswd">Senha <span>*</span></label>
-                <input type="password" id="pswd" name="senhaUser" idautocomplete="current-password">
+                <input type="password" id="pswd" name="senhaUser" placeholder="A senha definida no cadastro" idautocomplete="current-password">
+                <p id="pswd-helper" class="helper-text">Mensagem de ajuda</p>
 
                 <p class="paragrafoLogin">Não possui uma conta? <a href="./paginas/novoUser.html">Cadastre-se</a></p>
 
                 <p class="paragrafoLogin"><a href="./paginas/recuperarSenha.html">Esqueceu a senha?</a></p>
 
-                <button type="button" id="botaoLogin" onclick="validar()">Entrar</button> <!-- centralizar este krlh -->
+                <button type="button" id="botaoLogin" onclick="validar()">Entrar</button>
             </form>
         </div>
     </main>

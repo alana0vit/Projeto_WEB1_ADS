@@ -31,6 +31,18 @@ input, button{
     color: #1c1c1c;
 }
 
+input.error {
+    border: solid 2px #992020;
+    background-color: #CCBBBB;
+    color: #662020;
+  }
+  
+  input.correct {
+    background-color: #BBCCBB;
+    border: solid 2px #206620;
+    color: #206620;
+  }
+
 /* CSS aplicado sobre IDs */
 
 #mainLogin{
@@ -411,6 +423,7 @@ input, button{
     margin: 2%;
     text-decoration: none;
     color: #7fffd4;
+    font-family: "Fascinate Inline", system-ui;
 }
 
 .butaoSobre{
@@ -508,6 +521,29 @@ margin-left: 41%;
     color: #1c1c1c;
     text-align: center;
     /* margin-top: 10%; */
+}
+
+.helper-text {
+    display: none;
+    font-size: .8rem;
+    color: darkred;
+  }
+
+.required-popup::after {
+  content: "*Campo obrigatório";
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #DFDFDF;
+  font-size: .65rem;
+  padding: .2rem .3rem;
+  width: auto;
+  display: block;
+  background-color: #202020;
+}
+
+.visible {
+  display: block;
 }
 
 /* .viseble{
